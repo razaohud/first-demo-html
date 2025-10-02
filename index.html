@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberBrand - Cybersecurity Experts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at center, #001f33, #000000);
+      color: #00f0ff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0a0a0a;
+      border-bottom: 1px solid #00f0ff44;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #00f0ff;
+      font-size: 18px;
+      text-shadow: 0 0 5px #00f0ff;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: white;
+      text-shadow: 0 0 10px white, 0 0 20px #00f0ff;
+    }
+
+    section {
+      padding: 80px 40px;
+      border-bottom: 1px solid #003344;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00f0ff;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 800px;
+    }
+
+    .services, .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #0d0d0d;
+      border: 1px solid #003344;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px #00f0ff44;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #00f0ffaa;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00f0ff;
+    }
+
+    footer {
+      background-color: #0a0a0a;
+      color: #00ffff;
+      padding: 50px 30px;
+      border-top: 1px solid #00ffff;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+    }
+
+    .footer-section h3 {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p, .footer-section a {
+      font-size: 16px;
+      color: #ccc;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      color: #00ffff;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background: #0a0a0a;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #00f0ff;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">CYBER BRAND</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to CyberBrand</h1>
+    <p>Your trusted partner for cybersecurity, IT solutions, and futuristic business services.</p>
+  </section>
+
+  <section id="services">
+  <h2>Our Services</h2>
+  <p style="color:#00f0ff; text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff; font-size: 20px; margin-bottom: 20px;">
+    Services start from PKR 15,000 only!
+  </p>
+  <div class="services">
+    <div class="card">
+    </div>
+    <!-- etc... -->
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card"></div>
+    
+       <h3>🔐 Cyber Security</h3>
+      <p>Protect your business from threats with modern defense systems.</p>
+      <section class="cyber-banner" style="text-align: center; margin: 40px 0;">
+  <img src="https://t4.ftcdn.net/jpg/02/45/63/69/360_F_245636933_kY23ohGptK5t6n8wGSXIgLgVXWeHJRct.jpg"
+       alt="Cyber Security Banner"
+       style="width: 80%; max-width: 600px; border-radius: 12px; box-shadow: 0 0 20px #00f0ff;">
+</section>
+    </div>
+    <div class="card">
+      <h3>🌐 Web Development</h3>
+      <p>Custom websites built with performance and style.</p>
+      <section class="webdev-image" style="text-align: center; margin: 40px 0;">
+  <img src="https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ysEsVw3q2axYt3oVZAuQjtHRlN3lY-U_e0ikK5yKIXQ=" 
+       alt="Web Development Banner"
+       style="width: 80%; max-width: 600px; border-radius: 12px; box-shadow: 0 0 20px #00f0ff;">
+</section>
+    </div>
+    <div class="card">
+      <h3>📈 Digital Marketing</h3>
+      <p>SEO, social media, and online branding to grow your business.</p>
+      <section class="digital-marketing-img" style="text-align: center; margin: 40px 0;">
+  <img src="https://media.istockphoto.com/id/1648044864/photo/the-idea-is-that-online-marketing-digital-channels-relies-on-internet-to-communicate-and.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=tBHnsR6yAjTReCWf0NxvghXDat7gB5e-ZqtBJWA2cpY=" 
+       alt="Digital Marketing Banner"
+       style="width: 80%; max-width: 600px; border-radius: 12px; box-shadow: 0 0 20px #00f0ff;">
+</section>
+    </div>
+  </div>
+</section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <h3>CyberScanner Tool</h3>
+        <p>A real-time vulnerability scanner built for enterprises.</p>
+        <img src="https://img.freepik.com/free-photo/abstract-cybersecurity-concept-design_23-2151841676.jpg" alt="Cyber Scan Tool">
+      </div>
+      <div class="card">
+        <h3>Dark Web Crawler</h3>
+        <p>Custom Python tool for crawling hidden darknet pages securely.</p>
+        <img src="https://i.ytimg.com/vi/rvV2olWKoa0/maxresdefault.jpg" alt="Dark Web Tool">
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We provide professional cybersecurity and IT services with passion and precision. Trusted by businesses across Pakistan.</p>
+      </div>
+      <div class="footer-section" style="text-align: right;">
+        <h3>Contact</h3>
+        <p>
+          <i class="fas fa-paperclip"></i> Email: <a href="mailto:info@example.com">ohudraza60@gmail.com</a><br>
+          <i class="fas fa-phone"></i> Phone: <a href="tel:+923001234567">+92 323 9929938</a><br>
+          <i class="fas fa-location-dot"></i> Karachi, Pakistan
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 CyberBrand. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
